@@ -8,7 +8,7 @@ public class FrontPage extends Database{
 
 	public FrontPage() {
 		jframe=new JFrame();
-		jframe.setTitle("UserType");
+		jframe.setTitle("UserType");//
 		jframe.setSize(new Dimension(1016,638));
 		jpanel=new JPanel();
 		jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
