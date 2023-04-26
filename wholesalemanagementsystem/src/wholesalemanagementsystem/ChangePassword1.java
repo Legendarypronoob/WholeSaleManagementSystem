@@ -10,7 +10,7 @@ public class ChangePassword1 extends Database{
 		
 		jframe =new JFrame();
 		jframe.setTitle("Change Password");
-		jframe.setSize(new Dimension(1016,638));
+		jframe.setSize(new Dimension(1016,638));//
 		jpanel =new JPanel();
 		jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);		
 		jframe.getContentPane().add(jpanel);
