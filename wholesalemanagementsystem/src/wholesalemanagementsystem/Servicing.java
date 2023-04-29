@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 
-public class Servicing extends Database{
+public class Servicing extends Utility{
 
 	Servicing(){
 		jframe =new JFrame();

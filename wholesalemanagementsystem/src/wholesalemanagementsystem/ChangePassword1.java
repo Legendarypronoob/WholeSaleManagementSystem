@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class ChangePassword1 extends Database{
+public class ChangePassword1 extends Utility{
 
 	public ChangePassword1() {
 		

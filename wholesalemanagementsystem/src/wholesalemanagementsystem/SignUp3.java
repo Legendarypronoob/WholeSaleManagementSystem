@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SignUp3 extends Database {
+public class SignUp3 extends Utility {
 	
 SignUp3(){
 	

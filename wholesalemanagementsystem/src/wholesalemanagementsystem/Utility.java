@@ -1,6 +1,6 @@
 package wholesalemanagementsystem;
 import javax.swing.*;
-public class Database {
+public class Utility {
 protected static JFrame jframe;
 protected static JPanel jpanel;
 protected static JButton jbutton;

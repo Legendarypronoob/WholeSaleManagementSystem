@@ -2,7 +2,7 @@ package wholesalemanagementsystem;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class LogIn extends Database{
+public class LogIn extends Utility{
 	
 	
 

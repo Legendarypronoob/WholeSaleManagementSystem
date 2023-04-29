@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PurchaseHistory extends Database{
+public class PurchaseHistory extends Utility{
 
 	PurchaseHistory() {
 		

@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Menu extends Database {
+public class Menu extends Utility {
 	Menu(){
 		
 		jframe=new JFrame();

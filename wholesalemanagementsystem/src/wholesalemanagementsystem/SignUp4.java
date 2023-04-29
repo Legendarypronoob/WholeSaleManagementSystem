@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SignUp4 extends Database{
+public class SignUp4 extends Utility{
 SignUp4(){
 	
 	jframe=new JFrame();

@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Shopping extends Database{
+public class Shopping extends Utility{
 	
 	Shopping(){
 		

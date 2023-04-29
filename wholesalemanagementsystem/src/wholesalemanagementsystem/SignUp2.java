@@ -3,7 +3,7 @@ package wholesalemanagementsystem;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class SignUp2 extends Database{
+public class SignUp2 extends Utility{
 
 	SignUp2(){
 		

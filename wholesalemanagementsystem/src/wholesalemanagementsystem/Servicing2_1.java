@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Servicing2_1 extends Database{
+public class Servicing2_1 extends Utility{
 
 	Servicing2_1(){
 		

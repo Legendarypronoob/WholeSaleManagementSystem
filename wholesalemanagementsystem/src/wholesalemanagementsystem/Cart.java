@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Cart extends Database{
+public class Cart extends Utility{
 	
 	Cart(){
 		
