@@ -59,7 +59,7 @@ public class Menu extends Utility {
 		jlabel1=new JLabel("What would you like to do?");//user preference
 		
 		
-		image1=new ImageIcon("Servicing.jpg");
+		image1=new ImageIcon("ServicingIcon.jpg");
 		jlabel2=new JLabel("Servicing");//servicing
 		jlabel2.setIcon(image1);
 		jlabel2.setToolTipText("Servicing");
@@ -90,7 +90,7 @@ public class Menu extends Utility {
 		jlabel2.setSize(200, 200);
 		jlabel2.setLocation(280, 330);
 		jpanel.add(jlabel2);
-		image2=new ImageIcon("Shopping.jpg");
+		image2=new ImageIcon("ShoppingIcon.jpg");
 		jlabel3=new JLabel("Shopping");//shopping
 		jlabel3.setIcon(image2);
 		jlabel3.setToolTipText("Shop");
@@ -142,7 +142,7 @@ public class Menu extends Utility {
 		jlabel4.setSize(200, 200);
 		jlabel4.setLocation(638, 155);
 		jpanel.add(jlabel4);
-		image4=new ImageIcon("PurchaseHistory.jpg");
+		image4=new ImageIcon("PurchaseHistoryIcon.jpg");
 		jlabel5=new JLabel("Purchase History");//purchase history
 		jlabel5.setIcon(image4);
 		jlabel5.setToolTipText("Purchase History");
@@ -168,7 +168,7 @@ public class Menu extends Utility {
 		jlabel5.setLocation(162, 155);
 		jlabel5.setSize(200, 200);
 		jpanel.add(jlabel5);
-		image5=new ImageIcon("ChangePassword.jpg");
+		image5=new ImageIcon("ChangePasswordIcon.jpg");
 		jlabel6=new JLabel("Change password");//change passowrd
 		jlabel6.setIcon(image5);
 		jlabel6.setToolTipText("Change password");
