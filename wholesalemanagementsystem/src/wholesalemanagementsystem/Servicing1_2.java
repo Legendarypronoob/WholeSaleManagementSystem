@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class SignUp4 extends Utility{
+public class Servicing1_2 extends Utility{
 	protected static JFrame jframe;
 	protected static JPanel jpanel;
 	protected static JButton jbutton;
@@ -42,43 +42,45 @@ public class SignUp4 extends Utility{
 	protected static ImageIcon image10;
 	protected static ImageIcon imageback;
 	protected static ImageIcon imagesignout;
-SignUp4(){
+	Servicing1_2(){
+		
+		jframe =new JFrame();
+		jframe.setTitle("Servicing");
+		jframe.setSize(new Dimension(1016,638));
+		jpanel =new JPanel();
+		jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);		
+		jframe.getContentPane().add(jpanel);
+		jpanel.setLayout(null);
+		image=new ImageIcon("Servicing2_2.jpg");
+		
+		
+		jlabel1=new JLabel("Warranty invalid. Please contact Merchant for further information.");//invalid warranty dialogue
+		jlabel1.setHorizontalAlignment(SwingConstants.CENTER);
+	    jlabel1.setBounds(0,275,1000,30);
+	    jpanel.add(jlabel1);
+	    
+	    
+		jbutton=new JButton("Go to Menu");//go to Menu
+		jbutton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				jframe.dispose();
+				new Menu();//go to menu
+		}});
+		jbutton.setSize(132,43);
+		jbutton.setLocation(438,308);
+		jpanel.add(jbutton);
+		jlabel=new JLabel();
+		jlabel.setIcon(image);
+		jlabel.setBounds(0,0,1000,600);
+		jpanel.add(jlabel);
+		
+		
+		
+		jframe.setVisible(true);
+
+		
+	}
 	
-	jframe=new JFrame();
-	jframe.setTitle("SignUp");
-	jframe.setSize(new Dimension(1016,638));
-	jpanel=new JPanel();
-	jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-	jframe.getContentPane().add(jpanel);
-	jpanel.setLayout(null);
-	image=new ImageIcon("SignUp4.jpg");
 	
-	
-    jlabel1=new JLabel("Your account has been created succesfully.");//success dialogue
-    jlabel1.setHorizontalAlignment(SwingConstants.CENTER);
-    jlabel1.setBounds(0,281,1000,22);
-    jpanel.add(jlabel1);
-    
-    
-	jbutton=new JButton("Go to LogIn");//go to login
-	jbutton.addActionListener(new ActionListener() {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			jframe.dispose();
-			new LogIn();
-	}});
-	jbutton.setSize(132,43);
-	jbutton.setLocation(438,308);
-	jpanel.add(jbutton);
-	jlabel=new JLabel();
-	jlabel.setIcon(image);
-	jlabel.setBounds(0,0,1000,600); 
-	jpanel.add(jlabel);
-	
-	
-	
-	jframe.setVisible(true);
-	
-	
-}
 }

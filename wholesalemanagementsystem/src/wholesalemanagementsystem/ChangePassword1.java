@@ -1,62 +1,79 @@
 package wholesalemanagementsystem;
 
-import java.awt.event.*;
-import java.awt.*;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
-public class ChangePassword1 extends Utility{
-
+public class ChangePassword1 extends Utility {
+	protected static JFrame jframe;
+	protected static JPanel jpanel;
+	protected static JButton jbutton;
+	protected static JButton jbutton1;
+	protected static JButton jbutton2;
+	protected static JButton jbutton3;
+	protected static JButton jbutton4;
+	protected static JButton jbutton5;
+	protected static JButton jbutton6;
+	protected static JLabel jlabel;
+	protected static JLabel jlabel1;
+	protected static JLabel jlabel2;
+	protected static JLabel jlabel3;
+	protected static JLabel jlabel4;
+	protected static JLabel jlabel5;
+	protected static JLabel jlabel6;
+	protected static JLabel jlabel7;
+	protected static JLabel jlabel8;
+	protected static JLabel jlabelback;
+	protected static JLabel jlabelsignout;
+	protected static JTextField jtextfield;
+	protected static JTextField jtextfield1;
+	protected static JTextField jtextfield2;
+	protected static JPasswordField jpasswordfield;
+	protected static ImageIcon image;
+	protected static ImageIcon image1;
+	protected static ImageIcon image2;
+	protected static ImageIcon image3;
+	protected static ImageIcon image4;
+	protected static ImageIcon image5;
+	protected static ImageIcon image6;
+	protected static ImageIcon image7;
+	protected static ImageIcon image8;
+	protected static ImageIcon image9;
+	protected static ImageIcon image10;
+	protected static ImageIcon imageback;
+	protected static ImageIcon imagesignout;
 	public ChangePassword1() {
 		
 		jframe =new JFrame();
 		jframe.setTitle("Change Password");
-		jframe.setSize(new Dimension(1016,638));//
+		jframe.setSize(new Dimension(1016,638));
 		jpanel =new JPanel();
 		jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);		
 		jframe.getContentPane().add(jpanel);
 		jpanel.setLayout(null);
-		jlabel=new JLabel();
-		image=new ImageIcon("ChangePassword1.jpg");
-		jlabel.setIcon(image);
-		jlabel.setBounds(0,0,1000,600);
-		jpanel.add(jlabel);
+		image=new ImageIcon("ChangePassword2.jpg");
 		
-		
-		jlabel1=new JLabel("Previous Password:");//previous password
-	    jlabel1.setBounds(127,242,145,17);
+		jlabel1=new JLabel("Your password has been changed succesfully.");//password change ssuccessful dialogue
+		jlabel1.setHorizontalAlignment(SwingConstants.CENTER);
+	    jlabel1.setBounds(0,275,1000,30);
 	    jpanel.add(jlabel1);
-	    jlabel2 =new JLabel("New Password :");//new password
-	    jlabel2.setBounds(127,314,100,17);
-	    jpanel.add(jlabel2);
-	    jlabel3 =new JLabel("Confirm Password :");//confirm password
-	    jlabel3.setBounds(127,386,100,17);
-	    jpanel.add(jlabel3);
 	    
 	    
-	    jtextfield= new JTextField();//previous password
-	    jtextfield.setBounds(127,265,381,38);
-	    jpanel.add(jtextfield);
-	    jtextfield1= new JTextField();//new password
-	    jtextfield1.setBounds(127,337,381,38);
-	    jpanel.add(jtextfield1);
-	    jtextfield2= new JTextField();//confirm password
-	    jtextfield2.setBounds(127,409,381,38);
-	    jpanel.add(jtextfield2);
-	    
-	    
-		jbutton=new JButton("Finish");//finalize
+		jbutton=new JButton("Go to Menu");//go to menu
 		jbutton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				jframe.dispose();
-				new ChangePassword2();
+				new Menu();
 		}});
-		jbutton.setSize(113,43);
-		jbutton.setLocation(719,411);
+		jbutton.setSize(132,43);
+		jbutton.setLocation(438,308);
 		jpanel.add(jbutton);
-		jbutton1=new JButton();//back
-		jbutton2=new JButton();//signout
-
+		jlabel=new JLabel();
+		jlabel.setIcon(image);
+		jlabel.setBounds(22,11,1000,600);
+		jpanel.add(jlabel);
+		
 		
 		
 		jframe.setVisible(true);
