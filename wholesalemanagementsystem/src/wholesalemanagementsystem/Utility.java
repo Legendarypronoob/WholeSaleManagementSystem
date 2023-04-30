@@ -1,4 +1,6 @@
 package wholesalemanagementsystem;
+import java.util.*;
+
 import javax.swing.*;
 public class Utility {
 	protected static JFrame jframe;
@@ -38,5 +40,6 @@ public class Utility {
 	protected static ImageIcon image10;
 	protected static ImageIcon imageback;
 	protected static ImageIcon imagesignout;
+	protected static Set<Integer> productid=new HashSet<>();
 
 }

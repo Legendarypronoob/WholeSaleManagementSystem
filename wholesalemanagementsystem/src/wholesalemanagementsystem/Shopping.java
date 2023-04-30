@@ -1,8 +1,12 @@
 package wholesalemanagementsystem;
 
 import javax.swing.*;
+import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 
 public class Shopping extends Utility{
 	protected static JFrame jframe;
@@ -44,8 +48,13 @@ public class Shopping extends Utility{
 	protected static ImageIcon imagesignout;
 	protected static ImageIcon imagesearch;
 	protected static JTextArea textArea;
-	protected static JScrollBar scrollBar;
+	protected static JDesktopPane desktopPane;
+	
 	private JLabel jlabel2;
+	private JLabel lblNewLabel;
+	private JPanel panel;
+	private JLabel lblNewLabel_1;
+	private JScrollPane scrollPane;
 	Shopping(){
 		
 		jframe =new JFrame();
@@ -59,6 +68,15 @@ public class Shopping extends Utility{
 		image1=new ImageIcon("GoToCart.jpg");
 		image2=new ImageIcon("AddToCart.jpg");
 		
+		
+
+	        
+	     
+
+	        
+		
+		
+		
 		textArea = new JTextArea();
 		textArea.setBounds(327, 134, 281, 22);
 		jpanel.add(textArea);
@@ -68,6 +86,10 @@ public class Shopping extends Utility{
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				
+				productid.add(123);//adding products to cart
+				productid.add(2345);
+				
 			}
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -187,12 +209,11 @@ public class Shopping extends Utility{
 		jlabelsignout.setSize(60, 60);
 		jpanel.add(jlabelsignout);
 		
-		scrollBar = new JScrollBar();
-		scrollBar.setBounds(947, 214, 17, 260);
-		jpanel.add(scrollBar);
+		
 		
 		
 		jlabel=new JLabel();
+		jlabel.setAutoscrolls(true);
 		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 		jlabel.setIcon(new ImageIcon("F:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Shopping.jpg"));
 		jlabel.setBounds(0,0,1000,600);
