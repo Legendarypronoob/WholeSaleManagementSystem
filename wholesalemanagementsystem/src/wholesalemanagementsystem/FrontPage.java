@@ -28,6 +28,7 @@ public class FrontPage {
 		jpanel.add(jlabel1);
 		
 		jlabel=new JLabel();
+		jlabel.setSize(1000,600);
 		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\FrontPage.png"));
 		jlabel.setBounds(0,0,1000,600); 
 		jpanel.add(jlabel);
@@ -40,7 +41,7 @@ public class FrontPage {
 				e.printStackTrace();
 			}
 		}
-		jframe.dispose();
+		//jframe.dispose();
 		new LogIn();
 		
 		

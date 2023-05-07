@@ -9,13 +9,13 @@ public class LogIn {
 	protected JLabel jlabel,jlabel1,jlabel2,jlabelsetext;
 	protected JTextField jtextfield;
 	protected JPasswordField jpasswordfield;
-
+	private ImageIcon image;
 	
 	public LogIn() {
 		
 		
 		jframe=new JFrame();
-		jframe.setTitle("LogIn");
+		jframe.setTitle("LogIn");//
 		jframe.setSize(new Dimension(1016,638));
 		jpanel=new JPanel();
 		jframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -24,8 +24,9 @@ public class LogIn {
         jframe.setResizable(false);
         jframe.setExtendedState(JFrame.MAXIMIZED_HORIZ);
         jframe.setVisible(true);
+        
 		
-		jlabel1 = new JLabel("SignUp");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -45,10 +46,10 @@ public class LogIn {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(394, 333, 46, 14);
+		jlabel1.setBounds(455, 392, 118, 29);
 		jpanel.add(jlabel1);
 		
-		jlabel2 = new JLabel("LogIn");
+		jlabel2 = new JLabel("");
 		jlabel2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -68,30 +69,33 @@ public class LogIn {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel2.setBounds(521, 333, 46, 14);
+		jlabel2.setBounds(586, 392, 70, 29);
 		jpanel.add(jlabel2);
 		
 		jtextfield = new JTextField();
-		jtextfield.setBounds(428, 212, 123, 20);
+		jtextfield.setBorder(null);
+		jtextfield.setCaretColor(new Color(30, 144, 255));
+		jtextfield.setDisabledTextColor(new Color(240, 240, 240));
+		jtextfield.setOpaque(false);
+		jtextfield.setBounds(407, 260, 231, 29);
 		jpanel.add(jtextfield);
 		jtextfield.setColumns(10);
 		
 		jpasswordfield = new JPasswordField();
-		jpasswordfield.setBounds(428, 273, 123, 20);
+		jpasswordfield.setBorder(null);
+		jpasswordfield.setOpaque(false);
+		jpasswordfield.setBounds(407, 331, 231, 29);
 		jpanel.add(jpasswordfield);
-		jframe.setBounds(0,0,1000,600); 
 		
-		jlabelsetext=new JLabel();
-		jlabelsetext.setText("asdas ");
-		jlabelsetext.setBounds(0,0,1000,600);
-		jpanel.add(jlabelsetext);
-		
-		
-		
+
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\LogIn.png"));
+		jlabel.setSize(1000, 600);
+		image=new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\LogIn.png");
+		jlabel.setIcon(image);
 		jpanel.add(jlabel);
-		
+		jframe.setBounds(0,0,1016,637);
+
+
 	}
 }
 
