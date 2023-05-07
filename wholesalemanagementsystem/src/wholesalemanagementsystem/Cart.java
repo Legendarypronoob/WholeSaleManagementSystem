@@ -1,75 +1,118 @@
 package wholesalemanagementsystem;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+public class Cart {
+	
+	protected JFrame jframe;
+	protected JPanel jpanel;
+	protected JLabel jlabel,jlabel1,jlabel2,jlabelback,jlabelsignout;
+	protected JLabel product1,product2,product3,product4,product5;
+	protected JTextField jtextfield;
 
-public class Cart extends Utility{
-	protected static JFrame jframe;
-	protected static JPanel jpanel;
-	protected static JButton jbutton;
-	protected static JButton jbutton1;
-	protected static JButton jbutton2;
-	protected static JButton jbutton3;
-	protected static JButton jbutton4;
-	protected static JButton jbutton5;
-	protected static JButton jbutton6;
-	protected static JLabel jlabel;
-	protected static JLabel jlabel1;
-	protected static JLabel jlabel3;
-	protected static JLabel jlabel4;
-	protected static JLabel jlabel5;
-	protected static JLabel jlabel6;
-	protected static JLabel jlabel7;
-	protected static JLabel jlabel8;
-	protected static JLabel jlabelsearch;
-	protected static JLabel jlabelback;
-	protected static JLabel jlabelsignout;
-	protected static JTextField jtextfield;
-	protected static JTextField jtextfield1;
-	protected static JTextField jtextfield2;
-	protected static JPasswordField jpasswordfield;
-	protected static ImageIcon image;
-	protected static ImageIcon image1;
-	protected static ImageIcon image2;
-	protected static ImageIcon image3;
-	protected static ImageIcon image4;
-	protected static ImageIcon image5;
-	protected static ImageIcon image6;
-	protected static ImageIcon image7;
-	protected static ImageIcon image8;
-	protected static ImageIcon image9;
-	protected static ImageIcon image10;
-	protected static ImageIcon imageback;
-	protected static ImageIcon imagesignout;
-	protected static ImageIcon imagesearch;
-	protected static JTextArea textArea;
-	protected static JScrollBar scrollBar;
-	Cart(){
+
+	public Cart() {
 		
-		jframe =new JFrame();
+		
+		jframe=new JFrame();
 		jframe.setTitle("Cart");
 		jframe.setSize(new Dimension(1016,638));
-		jpanel =new JPanel();
-		jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);		
+		jpanel=new JPanel();
+		jframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		jframe.getContentPane().add(jpanel);
 		jpanel.setLayout(null);
+        jframe.setResizable(false);
+        jframe.setExtendedState(JFrame.MAXIMIZED_HORIZ);
+        jframe.setVisible(true);
 		
 		
+    	jlabel1 = new JLabel("Total :");
+    	jlabel1.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Cart.png"));
+    	//total amount
+		jlabel1.setBounds(138, 508, 46, 14);
+		jpanel.add(jlabel1);
+        
+		jlabel2 = new JLabel("Buy");
+		jlabel2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				jframe.dispose();
+				new PurchaseHistory();
+			}
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+		});
+		jlabel2.setBounds(422, 508, 46, 14);
+		jpanel.add(jlabel2);
+
+		jlabelback=new JLabel("Back");
+		jlabelback.setIcon(new ImageIcon(""));
+		jlabelback.setBounds(40,70,70,70);
+		jlabelback.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				jframe.dispose();
+				new Menu();
+			}
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+		});
+		jpanel.add(jlabelback);
 		
-		for(int x: productid) {
-			System.out.println(x); 
-			
-		}
-			
-			
+		jlabelsignout=new JLabel("SignOut");
+		jlabelsignout.setIcon(new ImageIcon(""));
+		jlabelsignout.setBounds(869,70,70,70);
+		jlabelsignout.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				jframe.dispose();
+				new LogIn();
+			}
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+		});
+		jpanel.add(jlabelsignout);
+		
+		
 		jlabel=new JLabel();
-		image=new ImageIcon("Cart.jpg");
-		jlabel.setIcon(image);
-		jlabel.setBounds(0,0,1000,600);
+		jframe.setBounds(0,0,1000,600); 
+		jlabel.setIcon(new ImageIcon("Cart.png"));
 		jpanel.add(jlabel);
 		
-		jframe.setVisible(true);
+		
+		
+		
 	}
-
 }
+	
+	
