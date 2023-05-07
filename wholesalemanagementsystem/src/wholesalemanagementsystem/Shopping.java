@@ -25,7 +25,7 @@ public class Shopping {
         jframe.setExtendedState(JFrame.MAXIMIZED_HORIZ);
         jframe.setVisible(true);
 		
-		jlabel1 = new JLabel("See Details");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -44,10 +44,10 @@ public class Shopping {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(647, 519, 46, 14);
+		jlabel1.setBounds(431, 533, 141, 29);
 		jpanel.add(jlabel1);
 		
-		jlabel2 = new JLabel("GoToCart");
+		jlabel2 = new JLabel("");
 		jlabel2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -67,10 +67,10 @@ public class Shopping {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel2.setBounds(733, 519, 46, 14);
+		jlabel2.setBounds(598, 533, 141, 29);
 		jpanel.add(jlabel2);
 		
-		jlabel3 = new JLabel("AddToCart");
+		jlabel3 = new JLabel("");
 		jlabel3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -89,10 +89,10 @@ public class Shopping {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel3.setBounds(817, 519, 46, 14);
+		jlabel3.setBounds(761, 533, 141, 29);
 		jpanel.add(jlabel3);
 		
-		jlabelsearch = new JLabel("Search");
+		jlabelsearch = new JLabel("\r\n");
 		jlabelsearch.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -111,7 +111,7 @@ public class Shopping {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabelsearch.setBounds(605, 184, 46, 14);
+		jlabelsearch.setBounds(636, 107, 41, 43);
 		jpanel.add(jlabelsearch);
 		
 		/*jlabelleft = new JLabel("PreviousPage");
@@ -137,7 +137,7 @@ public class Shopping {
 		jlabelleft.setBounds(557, 477, 46, 14);
 		jpanel.add(jlabelleft);*/
 		
-		jlabelright = new JLabel("nextpage");
+		jlabelright = new JLabel("");
 		jlabelright.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -157,12 +157,12 @@ public class Shopping {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabelright.setBounds(855, 337, 46, 14);
+		jlabelright.setBounds(904, 308, 46, 53);
 		jpanel.add(jlabelright);
 
-		jlabelback=new JLabel("Back");
+		jlabelback=new JLabel("");
 		jlabelback.setIcon(new ImageIcon(""));
-		jlabelback.setBounds(40,70,70,70);
+		jlabelback.setBounds(39,40,60,60);
 		jlabelback.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -184,9 +184,9 @@ public class Shopping {
 		});
 		jpanel.add(jlabelback);
 		
-		jlabelsignout=new JLabel("SignOut");
+		jlabelsignout=new JLabel("");
 		jlabelsignout.setIcon(new ImageIcon(""));
-		jlabelsignout.setBounds(869,70,70,70);
+		jlabelsignout.setBounds(802,48,160,43);
 		jlabelsignout.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -209,7 +209,10 @@ public class Shopping {
 		jpanel.add(jlabelsignout);
 		
 		jtextfield=new JTextField();
-		jtextfield.setBounds(319,181,243,20);
+		jtextfield.setOpaque(false);
+		jtextfield.setCaretColor(Color.ORANGE);
+		jtextfield.setBorder(null);
+		jtextfield.setBounds(343,118,243,20);
 		jpanel.add(jtextfield);
 		
 			
@@ -218,8 +221,13 @@ public class Shopping {
 
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("Shopping.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Shopping1.png"));
+		jpanel.add(jlabel);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 		
 		
 		

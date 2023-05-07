@@ -27,12 +27,14 @@ public class Cart {
 		
 		
     	jlabel1 = new JLabel("Total :");
+    	jlabel1.setForeground(Color.BLACK);
+    	jlabel1.setBackground(Color.WHITE);
     	jlabel1.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Cart.png"));
     	//total amount
-		jlabel1.setBounds(138, 508, 46, 14);
+		jlabel1.setBounds(110, 538, 269, 16);
 		jpanel.add(jlabel1);
         
-		jlabel2 = new JLabel("Buy");
+		jlabel2 = new JLabel("");
 		jlabel2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -52,12 +54,12 @@ public class Cart {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel2.setBounds(422, 508, 46, 14);
+		jlabel2.setBounds(426, 527, 153, 40);
 		jpanel.add(jlabel2);
 
-		jlabelback=new JLabel("Back");
+		jlabelback=new JLabel("");
 		jlabelback.setIcon(new ImageIcon(""));
-		jlabelback.setBounds(40,70,70,70);
+		jlabelback.setBounds(42,41,59,60);
 		jlabelback.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -79,9 +81,9 @@ public class Cart {
 		});
 		jpanel.add(jlabelback);
 		
-		jlabelsignout=new JLabel("SignOut");
+		jlabelsignout=new JLabel("");
 		jlabelsignout.setIcon(new ImageIcon(""));
-		jlabelsignout.setBounds(869,70,70,70);
+		jlabelsignout.setBounds(802,51,158,40);
 		jlabelsignout.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -105,9 +107,13 @@ public class Cart {
 		
 		
 		jlabel=new JLabel();
-		jframe.setBounds(0,0,1000,600); 
-		jlabel.setIcon(new ImageIcon("Cart.png"));
+		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Cart.png"));
 		jpanel.add(jlabel);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 		
 		
 		

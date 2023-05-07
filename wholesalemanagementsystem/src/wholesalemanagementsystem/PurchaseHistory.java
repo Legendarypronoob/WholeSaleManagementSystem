@@ -75,8 +75,13 @@ public class PurchaseHistory {
 		
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("PurchaseHistory.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\PurchaseHistory.png"));
+		jpanel.add(jlabel);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true); 
 		
 		
 		

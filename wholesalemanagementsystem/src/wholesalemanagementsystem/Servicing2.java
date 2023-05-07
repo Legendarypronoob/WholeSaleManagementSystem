@@ -27,7 +27,7 @@ public class Servicing2{
         jframe.setVisible(true);
         
 
-		jlabel1 = new JLabel("Go To Menu");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -47,14 +47,16 @@ public class Servicing2{
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(535, 299, 46, 14);
+		jlabel1.setBounds(426, 287, 149, 27);
 		jpanel.add(jlabel1);
 
 		
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("Servicing2.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Servicing2.png"));
+		jpanel.add(jlabel);
 				
 		
 	}

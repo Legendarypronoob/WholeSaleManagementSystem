@@ -16,6 +16,7 @@ public class SignUp1 {
 		jframe=new JFrame();
 		jframe.setTitle("SignUp");
 		jframe.setSize(new Dimension(1016,638));
+		jframe.setLocationRelativeTo(null);
 		jpanel=new JPanel();
 		jframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		jframe.getContentPane().add(jpanel);
@@ -24,7 +25,7 @@ public class SignUp1 {
         jframe.setExtendedState(JFrame.MAXIMIZED_HORIZ);
         jframe.setVisible(true);
 		
-		jlabel1 = new JLabel("Next");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -44,11 +45,11 @@ public class SignUp1 {
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(394, 333, 46, 14);
+		jlabel1.setBounds(435, 432, 131, 34);
 		jpanel.add(jlabel1);
 		
-		jlabelback=new JLabel("back");
-		jlabelback.setBounds(70,70,70,70);
+		jlabelback=new JLabel("");
+		jlabelback.setBounds(37,38,67,64);
 		jlabelback.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -71,24 +72,38 @@ public class SignUp1 {
 		jpanel.add(jlabelback);
 
 		jtextfield = new JTextField();
-		jtextfield.setBounds(428, 174, 123, 20);
+		jtextfield.setFont(new Font("Tahoma", Font.BOLD, 11));
+		jtextfield.setCaretColor(new Color(30, 144, 255));
+		jtextfield.setBorder(null);
+		jtextfield.setOpaque(false);
+		jtextfield.setBounds(401, 267, 194, 20);
 		jpanel.add(jtextfield);
 		jtextfield.setColumns(10);
 		
 		jtextfield1 = new JTextField();
-		jtextfield1.setBounds(428, 205, 123, 20);
+		jtextfield1.setFont(new Font("Tahoma", Font.BOLD, 11));
+		jtextfield1.setOpaque(false);
+		jtextfield1.setBorder(null);
+		jtextfield1.setBounds(401, 324, 194, 20);
 		jpanel.add(jtextfield1);
 		jtextfield1.setColumns(10);
 		
 		jtextfield2 = new JTextField();
-		jtextfield2.setBounds(428, 233, 123, 20);
+		jtextfield2.setFont(new Font("Tahoma", Font.BOLD, 11));
+		jtextfield2.setOpaque(false);
+		jtextfield2.setCaretColor(new Color(30, 144, 255));
+		jtextfield2.setBorder(null);
+		jtextfield2.setBounds(401, 381, 194, 20);
 		jpanel.add(jtextfield2);
 		jtextfield2.setColumns(10);
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("SignUp1.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\SignUp1.png"));
 		jpanel.add(jlabel);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 		
 		
 	}

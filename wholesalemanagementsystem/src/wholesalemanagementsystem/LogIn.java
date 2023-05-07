@@ -6,10 +6,9 @@ public class LogIn {
 	
 	protected JFrame jframe;
 	protected JPanel jpanel;
-	protected JLabel jlabel,jlabel1,jlabel2,jlabelsetext;
+	protected JLabel jlabel,jlabel1,jlabel2,jlabelback;
 	protected JTextField jtextfield;
 	protected JPasswordField jpasswordfield;
-	private ImageIcon image;
 	
 	public LogIn() {
 		
@@ -23,7 +22,8 @@ public class LogIn {
 		jpanel.setLayout(null);
         jframe.setResizable(false);
         jframe.setExtendedState(JFrame.MAXIMIZED_HORIZ);
-        jframe.setVisible(true);
+        
+       
         
 		
 		jlabel1 = new JLabel("");
@@ -73,27 +73,51 @@ public class LogIn {
 		jpanel.add(jlabel2);
 		
 		jtextfield = new JTextField();
+		jtextfield.setFont(new Font("Tahoma", Font.BOLD, 11));
 		jtextfield.setBorder(null);
 		jtextfield.setCaretColor(new Color(30, 144, 255));
 		jtextfield.setDisabledTextColor(new Color(240, 240, 240));
 		jtextfield.setOpaque(false);
-		jtextfield.setBounds(407, 260, 231, 29);
+		jtextfield.setBounds(415, 260, 214, 29);
 		jpanel.add(jtextfield);
 		jtextfield.setColumns(10);
 		
 		jpasswordfield = new JPasswordField();
+		jpasswordfield.setCaretColor(new Color(30, 144, 255));
 		jpasswordfield.setBorder(null);
 		jpasswordfield.setOpaque(false);
-		jpasswordfield.setBounds(407, 331, 231, 29);
+		jpasswordfield.setBounds(415, 331, 214, 29);
 		jpanel.add(jpasswordfield);
 		
+		jlabelback=new JLabel("");
+		jlabelback.setBounds(38,37,63,64);
+		jlabelback.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+			}
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+			}
+		});
+		jpanel.add(jlabelback);
 
 		jlabel=new JLabel();
 		jlabel.setSize(1000, 600);
-		image=new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\LogIn.png");
-		jlabel.setIcon(image);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\LogIn.png"));
 		jpanel.add(jlabel);
 		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 
 
 	}

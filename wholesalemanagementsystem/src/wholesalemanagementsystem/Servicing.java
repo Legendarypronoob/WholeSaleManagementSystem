@@ -27,18 +27,25 @@ public class Servicing{
         jframe.setVisible(true);
         
         
-		jtextfield=new JTextField();//product id
-		jtextfield.setBounds(127,265,381,38);
+		jtextfield=new JTextField();
+		jtextfield.setCaretColor(new Color(30, 144, 255));
+		jtextfield.setBorder(null);
+		jtextfield.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		jtextfield.setBounds(190,224,275,30);
 		jpanel.add(jtextfield);
 		jtextfield1=new JTextField();//date of purchase
-		jtextfield1.setBounds(127,337,381,38);
+		jtextfield1.setCaretColor(new Color(30, 144, 255));
+		jtextfield1.setBorder(null);
+		jtextfield1.setBounds(190,277,275,30);
 		jpanel.add(jtextfield1);
 		jtextfield2=new JTextField();//product details
-		 jtextfield2.setBounds(127,409,381,108);
+		jtextfield2.setCaretColor(new Color(30, 144, 255));
+		jtextfield2.setBorder(null);
+		 jtextfield2.setBounds(190,329,275,70);
 		jpanel.add(jtextfield2);
 		
 		
-		jlabel1 = new JLabel("Submit");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -58,12 +65,12 @@ public class Servicing{
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(768, 513, 46, 14);
+		jlabel1.setBounds(183, 441, 282, 39);
 		jpanel.add(jlabel1);
 
-		jlabelback=new JLabel("Back");
+		jlabelback=new JLabel("");
 		jlabelback.setIcon(new ImageIcon(""));
-		jlabelback.setBounds(40,70,70,70);
+		jlabelback.setBounds(40,39,64,62);
 		jlabelback.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -85,9 +92,9 @@ public class Servicing{
 		});
 		jpanel.add(jlabelback);
 		
-		jlabelsignout=new JLabel("SignOut");
+		jlabelsignout=new JLabel("");
 		jlabelsignout.setIcon(new ImageIcon(""));
-		jlabelsignout.setBounds(869,70,70,70);
+		jlabelsignout.setBounds(803,47,161,45);
 		jlabelsignout.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -111,10 +118,20 @@ public class Servicing{
 		
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("Servicing.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\Servicing.png"));
+		jpanel.add(jlabel);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setDropMode(DropMode.ON);
+		textArea.setRows(4);
+		textArea.setBounds(190, 329, 275, 70);
+		jpanel.add(textArea);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 				
 		
 	}
-	
 }

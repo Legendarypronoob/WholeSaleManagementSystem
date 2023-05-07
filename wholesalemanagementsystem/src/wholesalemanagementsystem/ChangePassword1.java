@@ -26,7 +26,7 @@ public class ChangePassword1{
    
 
 
-		jlabel1 = new JLabel("Go To LogIn");
+		jlabel1 = new JLabel("");
 		jlabel1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -46,13 +46,17 @@ public class ChangePassword1{
 			public void mouseReleased(MouseEvent e) {
 			}
 		});
-		jlabel1.setBounds(768, 513, 46, 14);
+		jlabel1.setBounds(425, 286, 151, 30);
 		jpanel.add(jlabel1);
 
 		
 		jlabel=new JLabel();
-		jlabel.setIcon(new ImageIcon("ChangePassword1.png"));
-		jframe.setBounds(0,0,1000,600); 
+		jlabel.setSize(1000, 600);
+		jlabel.setIcon(new ImageIcon("E:\\Git\\WholeSaleManagementSystem\\wholesalemanagementsystem\\Resources\\ChangePassword1.png"));
+		jpanel.add(jlabel);
+		jframe.setBounds(0,0,1016,637);
+		jframe.setLocationRelativeTo(null);
+		jframe.setVisible(true);
 		
 	}
 
